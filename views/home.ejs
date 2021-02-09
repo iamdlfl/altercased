@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Altercase</title>
+</head>
+<body>
+    <main class="container">
+        <div class="intro">
+            <h1>Hello!</h1>
+            <h2>Do you want to mock someone over the Internet?</h2> 
+            <p>Do you want to mock them incessantly, with long sentences and multiple interactions? Is your pinky-winky tired of hitting that shift key?</p>
+            <p>Well, Altercase is here to help! Just type/copy in the text you want to transform below and hit submit to get your text altercased!</p>
+            <p class="mockery"> yEs iTs tHaT sImPLe</p>
+        </div>
+        <div class="form">
+            <form action="/" method="POST">
+                <label for="text">Insert your text here</label>
+                <textarea id="text" name="text" id="" cols="60" rows="5"><% if (text) { %><%= text %><% } else { %>This will help society!<% } %></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="results">
+            <label for="result">Your results!</label>
+            <textarea id="result" name="result" id="" cols="60" rows="5" disabled><% if (result) { %><%= result %><% } else { %>tHiS wILl hELp sOcIeTy!<% } %></textarea>
+        </div>
+    </main>
+</body>
+</html>

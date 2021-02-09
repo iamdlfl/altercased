@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.15rem;
+  word-spacing: 0.1rem;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
+body {
+  position: absolute;
+  background-color: rgba(145, 83, 245, 0.1);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p, a, li, span, label, button, textarea {
+  font-size: 2rem;
+}
+
+.container {
+  margin: 10rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 90%;
+  min-width: 90%;
+  background-color: rgba(200, 200, 200, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  margin-bottom: 5rem;
+}
+.intro h1, .intro h2 {
+  line-height: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.intro p {
+  line-height: 2.5rem;
+}
+
+.mockery {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form label {
+  margin-bottom: 1rem;
+}
+.form textarea {
+  resize: none;
+}
+.form button {
+  margin: 2rem 0;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.results textarea {
+  resize: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
